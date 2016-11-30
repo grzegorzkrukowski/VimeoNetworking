@@ -61,6 +61,7 @@
     return @{@"link_expiration_time": @"expires"};
 }
 
+#if TARGET_OS_IOS
 - (Class)getClassForObjectKey:(NSString *)key
 {
     if ([key isEqualToString:@"log"])
@@ -69,6 +70,7 @@
     }
     return nil;
 }
+#endif
 
 #pragma mark - Instance methods
 

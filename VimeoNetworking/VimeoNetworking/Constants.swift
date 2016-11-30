@@ -30,4 +30,4 @@ import Foundation
 public let VimeoBaseURLString = NSURL(string: "https://cinema-api.ci.vimeows.com")
 
  /// Default API version to use for requests
-public let VimeoDefaultAPIVersionString = "3.2"
+internal let VimeoDefaultAPIVersionString = "3.2"
