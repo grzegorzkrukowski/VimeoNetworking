@@ -36,10 +36,10 @@ public extension Request
         
         if let parameters = self.parameters
         {
-            cacheKey = cacheKey + "." + String(parameters.description.hashValue)
+            cacheKey = cacheKey + "." + String("\(parameters)".hashValue)
         }
         
-        cacheKey = cacheKey.stringByReplacingOccurrencesOfString("/", withString: ".")
+        cacheKey = cacheKey.replacingOccurrences(of: "/", with: ".")
         
         return cacheKey
     }
