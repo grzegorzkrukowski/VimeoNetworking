@@ -73,7 +73,7 @@ final public class VimeoSessionManager: AFHTTPSessionManager
         let accessToken = account.accessToken
         requestSerializer.accessTokenProvider = {
             return accessToken
-        }
+        } as VimeoRequestSerializer.AccessTokenProvider
     }
     
     /**

@@ -47,16 +47,16 @@ open class Subscription: VIMModelObject
     /// Represents the Subscription object as a Dictionary
     open var toDictionary: [AnyHashable: Any]
     {
-        let dictionary = ["comment": self.comment ?? false,
-                          "credit": self.credit ?? false,
-                          "like": self.like ?? false,
-                          "mention": self.mention ?? false,
-                          "reply": self.reply ?? false,
-                          "follow": self.follow ?? false,
-                          "vod_preorder_available": self.vodPreorderAvailable ?? false,
-                          "video_available": self.videoAvailable ?? false,
-                          "share": self.share ?? false]
-        
+        var dictionary = [AnyHashable: Any]()
+        dictionary["comment"] = self.comment ?? false
+        dictionary["credit"] = self.credit ?? false
+        dictionary["like"] = self.like ?? false
+        dictionary["mention"] = self.mention ?? false
+        dictionary["reply"] = self.reply ?? false
+        dictionary["follow"] = self.follow ?? false
+        dictionary["vod_preorder_available"] = self.vodPreorderAvailable ?? false
+        dictionary["video_available"] = self.videoAvailable ?? false
+        dictionary["share"] = self.share ?? false
         return dictionary
     }
     

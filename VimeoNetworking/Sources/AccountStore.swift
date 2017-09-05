@@ -125,7 +125,7 @@ final class AccountStore
             else
             {
                 let description = "Received corrupted VIMAccount data from keychain"
-                let error = NSError(domain: type(of: self).ErrorDomain, code: LocalErrorCode.accountCorrupted.rawValue, userInfo: [NSLocalizedDescriptionKey: description])
+                let error = NSError(domain: Swift.type(of: self).ErrorDomain, code: LocalErrorCode.accountCorrupted.rawValue, userInfo: [NSLocalizedDescriptionKey: description])
                 
                 throw error
             }

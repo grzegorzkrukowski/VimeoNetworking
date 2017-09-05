@@ -27,11 +27,11 @@
 import Foundation
 
 /// Extend app configuration to provide a default configuration
-private extension AppConfiguration
+public extension AppConfiguration
 {
     /// The default configuration to use for this application, populate your client key, secret, and scopes.
     /// Also, don't forget to set up your application to receive the code grant authentication redirect, see the README for details.
-    private static let defaultConfiguration = AppConfiguration(clientIdentifier: "YOUR_CLIENT_KEY_HERE", clientSecret: "YOUR_CLIENT_SECRET_HERE", scopes: [], keychainService: "")
+    public static let defaultConfiguration = AppConfiguration(clientIdentifier: "YOUR_CLIENT_KEY_HERE", clientSecret: "YOUR_CLIENT_SECRET_HERE", scopes: [], keychainService: "")
 }
 
 /// Extend vimeo client to provide a default client

@@ -35,7 +35,7 @@ final public class VimeoRequestSerializer: AFJSONRequestSerializer
     fileprivate static let AcceptHeaderKey = "Accept"
     fileprivate static let AuthorizationHeaderKey = "Authorization"
     
-    public typealias AccessTokenProvider = (Void) -> String?
+    public typealias AccessTokenProvider = () -> String?
     
     // MARK: 
     

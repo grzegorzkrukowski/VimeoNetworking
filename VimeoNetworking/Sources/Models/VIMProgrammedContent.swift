@@ -28,13 +28,13 @@ import Foundation
 
 open class VIMProgrammedContent: VIMModelObject
 {
-    dynamic open var uri: String?
-    dynamic open var name: String?
-    dynamic open var type: String?
-    dynamic open var content: NSArray?
+    @objc dynamic open var uri: String?
+    @objc dynamic open var name: String?
+    @objc dynamic open var type: String?
+    @objc dynamic open var content: NSArray?
  
-    dynamic fileprivate var metadata: [AnyHashable: Any]?
-    dynamic fileprivate var connections: [AnyHashable: Any]?
+    @objc dynamic fileprivate var metadata: [AnyHashable: Any]?
+    @objc dynamic fileprivate var connections: [AnyHashable: Any]?
     
     fileprivate struct Constants
     {
